@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: no-repeat url("img/download (14).jpeg") center/cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+nav {
+  background-color: #28413d;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  color: teal;
+}
+nav input[type="search"] {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+}
+
+nav button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: teal;
+  color: white;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+main h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+main p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+aside {
+  position: fixed;
+  left: 10px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+aside img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  cursor: pointer;
+}
+main button {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  background: teal;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+#main-about {
+  margin-top: 100px;
+  padding: 40px;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+}
+.member {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.member:hover {
+  transform: translateY(-5px);
+}
+.member p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+.member p:nth-child(2) {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.member button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  background: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.member button:hover {
+  background: #008080cc;
+}
+
+#main-about p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+#heading-about {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+#main-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+#heading2-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+#contact-main {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 80px;
+}
+#contact-main h1 {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px black;
+}
+#contact-main p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+form {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 660px;
+  backdrop-filter: blur(5px);
+  margin-left: 30px;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form textarea {
+  resize: none;
+  height: 120px;
+  width: 500px;
+}
+form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: teal;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+form button:hover {
+  background: #008080cc;
+}
+/* #result {
+  padding: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+#result {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#result img {
+  width: 200px;
+  height: 100px;
+} */
